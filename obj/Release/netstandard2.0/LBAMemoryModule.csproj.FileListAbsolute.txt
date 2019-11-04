@@ -1,0 +1,8 @@
+R:\Users\User\source\repos\LBAMemoryModule\bin\Release\netstandard2.0\LBAMemoryModule.deps.json
+R:\Users\User\source\repos\LBAMemoryModule\bin\Release\netstandard2.0\LBAMemoryModule.dll
+R:\Users\User\source\repos\LBAMemoryModule\bin\Release\netstandard2.0\LBAMemoryModule.pdb
+R:\Users\User\source\repos\LBAMemoryModule\obj\Release\netstandard2.0\LBAMemoryModule.AssemblyInfoInputs.cache
+R:\Users\User\source\repos\LBAMemoryModule\obj\Release\netstandard2.0\LBAMemoryModule.AssemblyInfo.cs
+R:\Users\User\source\repos\LBAMemoryModule\obj\Release\netstandard2.0\LBAMemoryModule.dll
+R:\Users\User\source\repos\LBAMemoryModule\obj\Release\netstandard2.0\LBAMemoryModule.pdb
+R:\Users\User\source\repos\LBAMemoryModule\obj\Release\netstandard2.0\LBAMemoryModule.csprojAssemblyReference.cache
