@@ -54,8 +54,10 @@ namespace LBAMemoryModule
             if (0 == lbaVer) return 0;
             if (1 == lbaVer)
             {
-                baseString = "Relent";
-                readAddr = 0x0A000FC8;//Base address to start scanning from
+                //baseString = "Relent";
+                //readAddr = 0x0A000FC8;//Base address to start scanning from
+                baseString = "tempa.tmp";
+                readAddr = 0x0A000C81;
             }
             else
             {
@@ -72,6 +74,7 @@ namespace LBAMemoryModule
                 ReadProcessMemory((int)processHandle, readAddr, b, b.Length, ref bytesRead);
                 if (baseString == System.Text.Encoding.UTF7.GetString(b).Trim())
                 {
+                    if(1 == lbaVer) readAddr -= 0xCB9;
                     baseAddress = readAddr;
                     return readAddr;
                 }
