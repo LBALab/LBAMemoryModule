@@ -124,7 +124,7 @@ namespace LBAMemoryModule
         }
         #endregion
         #region readMemory
-        private bool readProcess(uint addressToRead, ref byte[] data)
+        public bool readProcess(uint addressToRead, ref byte[] data)
         {
             try
             {
@@ -134,6 +134,8 @@ namespace LBAMemoryModule
             catch { }
             return false;
         }
+
+
         public int readAddress(byte LBAVer, uint offsetToRead, uint size)
         {
             if (DetectLBAVersion() != LBAVer) return -1;
