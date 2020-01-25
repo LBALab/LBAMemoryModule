@@ -217,6 +217,12 @@ namespace LBAMemoryModule
             }
             return LBAVersion;
         }
+
+        public bool isLBARunning()
+        {
+            LBAVersion = 0;
+            return !(0 == DetectLBAVersion());
+        }
     }
 }
 
