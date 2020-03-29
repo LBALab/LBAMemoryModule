@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "kRAcggkycH7KeWlCJsmCdoz+PoXu6GGxHwTDSO31Ejf+hnja0bNxM4fFDbE5y6j3VBF84FiXVKuS+tP396NFwg==",
+  "success": true,
+  "projectFilePath": "R:\\Users\\User\\source\\repos\\LBAMemoryModule\\LBAMemoryModule.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

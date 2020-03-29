@@ -135,7 +135,14 @@ namespace LBAMemoryModule
             return false;
         }
 
-
+        public byte[] ReadAbsoluteAddress(uint readAddress, int length)
+        {
+            int bytesRead = 0;
+            byte[] data = new byte[length];
+            ReadProcessMemory((int) processHandle, readAddress, data, length, ref bytesRead);
+            return data;
+        }
+        
         public int readAddress(byte LBAVer, uint offsetToRead, uint size)
         {
             if (DetectLBAVersion() != LBAVer) return -1;
