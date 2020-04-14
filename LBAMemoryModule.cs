@@ -18,6 +18,14 @@ namespace LBAMemoryModule
         public ushort type;
         public byte lbaVersion; //1 for LBA1, or 2 for LBA2
 
+        public Item() { }
+        public Item(uint memoryOffset, ushort size)
+        {
+            this.memoryOffset = memoryOffset;
+            this.size = size;
+            this.lbaVersion = new Mem().DetectLBAVersion();
+        }
+
         public override string ToString()
         {
             return name;
@@ -118,6 +126,10 @@ namespace LBAMemoryModule
             writeProcess((uint)(getBaseAddress() + offset), BitConverter.GetBytes(val), size);
         }
 
+        public void WriteVal(uint offset, ushort data, byte size)
+        {
+            WriteVal((int)offset, data, size);
+        }
         public void WriteVal(int offset, ushort data, byte size)
         {
             WriteVal(DetectLBAVersion(), offset, data, size);
@@ -211,6 +223,10 @@ namespace LBAMemoryModule
             processHandle = OpenProcess(access, false, proc.Id); ;
         }
 
+        public byte[] getByteArray(uint startOffset, ushort size)
+        {
+            return getByteArray(DetectLBAVersion(), startOffset, size);
+        }
         //Returns 1 for LBA1, 2 for LBA2, or 0 if not found.
         public byte DetectLBAVersion()
         {

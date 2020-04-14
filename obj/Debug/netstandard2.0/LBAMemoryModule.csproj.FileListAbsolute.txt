@@ -6,3 +6,4 @@ R:\Users\User\source\repos\LBAMemoryModule\obj\Debug\netstandard2.0\LBAMemoryMod
 R:\Users\User\source\repos\LBAMemoryModule\obj\Debug\netstandard2.0\LBAMemoryModule.AssemblyInfo.cs
 R:\Users\User\source\repos\LBAMemoryModule\obj\Debug\netstandard2.0\LBAMemoryModule.dll
 R:\Users\User\source\repos\LBAMemoryModule\obj\Debug\netstandard2.0\LBAMemoryModule.pdb
+R:\Users\User\source\repos\LBAMemoryModule\obj\Debug\netstandard2.0\LBAMemoryModule.csproj.CoreCompileInputs.cache
