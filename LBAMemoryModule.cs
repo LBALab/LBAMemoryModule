@@ -2,7 +2,6 @@
 using System.Text;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
-
 namespace LBAMemoryModule
 {
     #region ItemObject
@@ -154,7 +153,7 @@ namespace LBAMemoryModule
             ReadProcessMemory((int) processHandle, readAddress, data, length, ref bytesRead);
             return data;
         }
-        
+
         public int readAddress(byte LBAVer, uint offsetToRead, uint size)
         {
             if (DetectLBAVersion() != LBAVer) return -1;
